@@ -59,37 +59,37 @@
 // }})
 
 
-let arrayInt=[2,4,5,7,8];
-console.log(arrayInt);
-let  newarrayInt=arrayInt.filter((item,index,Array)=>{
-    return item %2===0;
+// let arrayInt=[2,4,5,7,8];
+// console.log(arrayInt);
+// let  newarrayInt=arrayInt.filter((item,index,Array)=>{
+//     return item %2===0;
     
-}  )
+// }  )
     
-console.log(newarrayInt);
+// console.log(newarrayInt);
 
-function sumArray(newarrayInt){
-    sum = 0;
-    newarrayInt.map(function(value){
-        sum += value;
-    });
+// function sumArray(newarrayInt){
+//     sum = 0;
+//     newarrayInt.map(function(value){
+//         sum += value;
+//     });
      
-    return sum;}
-console.log(sumArray(newarrayInt));
+//     return sum;}
+// console.log(sumArray(newarrayInt));
 
-let  newarrayInt1=arrayInt.filter((item,index,Array)=>{
-    return item %2!==0;  
-}  )
+// let  newarrayInt1=arrayInt.filter((item,index,Array)=>{
+//     return item %2!==0;  
+// }  )
 
-console.log(newarrayInt1);
-function sumArray(newarrayInt1){
-    sum = 0;
-    newarrayInt1.map(function(value){
-        sum += value;
-    });
+// console.log(newarrayInt1);
+// function sumArray(newarrayInt1){
+//     sum = 0;
+//     newarrayInt1.map(function(value){
+//         sum += value;
+//     });
      
-    return sum;}
-console.log(sumArray(newarrayInt1));
+//     return sum;}
+// console.log(sumArray(newarrayInt1));
 
 
 
