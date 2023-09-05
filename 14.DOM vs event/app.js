@@ -92,7 +92,7 @@
 //sau 1s thì log ra giá trị mới
 
 let id = setInterval(()=>{
-    console.log("sau 1 giây");
+    console.log("sau 5 giây");
 },5000)
 clearInterval(id)
 
