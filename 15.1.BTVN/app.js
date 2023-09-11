@@ -23,15 +23,54 @@
 
 
 //BAI DONG HO
-function time() {
-    let date = new Date()
-    let hour = date.getHours();
-    let minute=date.getMinutes();
-    let second = date.getSeconds();
+// function time() {
+//     let date = new Date()
+//     let hour = date.getHours();
+//     let minute=date.getMinutes();
+//     let second = date.getSeconds();
+//     setTimeout("time()",1000);
+//     document.getElementById("digital-clock").innerHTML = hour + ": "+ minute + ": " + second;
+// }
+// time();
 
-    document.getElementById("digital-clock").innerText = hour + ": "+ minute + ": " + second;
+// let id = setInterval(()=>{
+//     console.log("sau 5 giây");
+// },5000)
+// clearInterval(id)
+
+
+
+
+//TẠO ĐỒNG HỒ ĐẾM NGƯỢC
+let thoiluong = 0;
+function thoigian(x){
+    thoiluong=x;
+    //dem ngược
+    demnguoc();
 }
-let id = setInterval(()=>{
-    console.log("sau 5 giây");
-},5000)
-clearInterval(id)
+function demnguoc(){
+    thoiluong--;
+    sophut = Math.floor(thoiluong / 60);
+    sogiay = thoiluong % 60;
+    document.getElementById("sophut").innerHTML=sophut;
+    document.getElementById("sogiay").innerHTML=sogiay;
+    if(thoiluong>0){
+        setTimeout(demnguoc,1000);
+    }else{
+        document.getElementById("hetgio").style.display= "block"
+    }
+}
+const btn1=document.getElementById("btn1");
+btn1.addEventListener("click",demnguoc);
+
+const btn2=document.getElementById("btn2");
+btn2.addEventListener("click",demnguoc);
+
+const btn3=document.getElementById("btn3");
+btn3.addEventListener("click",demnguoc);
+
+const btn4=document.getElementById("btn4");
+btn4.addEventListener("click",demnguoc);
+
+const btn5=document.getElementById("btn5");
+btn5.addEventListener("click",demnguoc);
